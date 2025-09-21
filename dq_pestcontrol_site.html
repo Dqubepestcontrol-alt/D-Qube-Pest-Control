@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dqube Pest Control</title>
+  <meta name="description" content="Dqube Pest Control - आपका भरोसेमंद pest control पार्टनर. Termite, Rodent, Cockroach और General pest solutions.">
+  <style>
+    :root{--primary:#0d6efd;--accent:#1e90ff;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; color:#111}
+    header{background:linear-gradient(90deg,var(--primary),var(--accent));color:#fff;padding:28px 16px;text-align:center}
+    .brand{font-size:1.6rem;font-weight:700;letter-spacing:0.6px}
+    .tag{opacity:0.95;margin-top:6px;font-size:0.95rem}
+    nav{display:flex;justify-content:center;gap:18px;padding:12px 8px;background:#f8fafc}
+    nav a{color:var(--primary);text-decoration:none;font-weight:600}
+    .wrap{max-width:1100px;margin:28px auto;padding:0 16px}
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;align-items:center}
+    .hero .text h1{font-size:1.8rem;margin:0 0 8px}
+    .hero .text p{margin:0 0 14px;color:var(--muted)}
+    .btn{background:var(--primary);color:#fff;padding:10px 16px;border-radius:8px;border:none;cursor:pointer;font-weight:700}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:18px}
+    .card{padding:18px;border-radius:10px;background:#fff;border:1px solid #e6eefc;box-shadow:0 4px 14px rgba(13,110,253,0.05)}
+    .card h3{margin:0 0 8px}
+    footer{background:#0f1724;color:#cbd5e1;padding:20px 16px;margin-top:28px}
+    .contact{display:grid;grid-template-columns:1fr;gap:12px}
+    .small{font-size:0.92rem;color:var(--muted)}
+    /* responsive */
+    @media(min-width:760px){
+      .hero{grid-template-columns:1fr 420px}
+      .brand{font-size:2rem}
+      .hero .text h1{font-size:2rem}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Dqube Pest Control</div>
+    <div class="tag">Keep Your Safe With Us — Termite · Rodent · Cockroach · General Pest</div>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="text">
+        <h1>हमारी सेवा — तेज, सुरक्षित और प्रभावी</h1>
+        <p class="small">Dqube Pest Control पेशेवर pest control सेवाएँ देता है — घर और व्यवसाय दोनों के लिए। हमारे तरीके सुरक्षित हैं और परिणाम दीर्घकालिक होते हैं।</p>
+        <p>
+          <button class="btn" onclick="location.href='#contact'">फ्री क्वोट प्राप्त करें</button>
+        </p>
+        <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
+          <div class="card" style="flex:1;min-width:180px">📞 <strong>7060104601 / 9068703036</strong><div class="small">कॉल करें</div></div>
+          <div class="card" style="flex:1;min-width:180px">✉️ <strong>dqubepestcontrol1@gmail.com</strong><div class="small">ईमेल भेजें</div></div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3>हमारी प्रमुख सेवाएँ</h3>
+        <ul style="padding-left:18px;margin:8px 0 0">
+          <li>टर्माइट कंट्रोल (Termite)</li>
+          <li>रॉडेंट कंट्रोल (Rats & Mice)</li>
+          <li>कॉक्रोच ट्रीटमेंट (Cockroach)</li>
+          <li>जनरल Pest Management</li>
+        </ul>
+        <p style="margin-top:12px"><button class="btn" onclick="contactNow()">अभी संपर्क करें</button></p>
+      </aside>
+    </section>
+
+    <section id="services">
+      <h2 style="margin-top:22px">हमारी सेवाएँ</h2>
+      <div class="services">
+        <div class="card"><h3>Termite Control</h3><p class="small">इको-फ्रेंडली तरिके से दीवारों और फर्नीचर की सुरक्षा।</p></div>
+        <div class="card"><h3>Rodent Control</h3><p class="small">सुरक्षित और असरदार रॉडेंट प्रबंधन।</p></div>
+        <div class="card"><h3>Cockroach Treatment</h3><p class="small">अत्याधुनिक कीटनाशक और निगरानी।</p></div>
+        <div class="card"><h3>Commercial Solutions</h3><p class="small">दुकान, गोदाम और ऑफिस के लिए कस्टम प्लान।</p></div>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:22px">
+      <h2>हमारे बारे में</h2>
+      <p class="small">Dqube Pest Control अनुभवी टीम और सुरक्षित तरीकों के साथ काम करता है। हमारा उद्देश्य है कि आपके घर और कारोबार को pest-free बनाना।</p>
+    </section>
+
+    <section id="contact" style="margin:22px 0">
+      <h2>Contact / संपर्क</h2>
+      <div class="contact">
+        <div class="card">
+          <p><strong>Address:</strong> Sector 31, Noida</p>
+          <p><strong>Phone:</strong> 7060104601 / <strong>9068703036</strong></p>
+          <p><strong>Email:</strong> <a href="mailto:dqubepestcontrol1@gmail.com">dqubepestcontrol1@gmail.com</a></p>
+        </div>
+
+        <div class="card">
+          <form onsubmit="sendMail(event)">
+            <label class="small">आपका नाम</label><br>
+            <input type="text" id="name" required style="width:100%;padding:8px;margin:6px 0;border-radius:6px;border:1px solid #dfe7ff"><br>
+            <label class="small">मोबाइल नंबर</label><br>
+            <input type="tel" id="phone" required style="width:100%;padding:8px;margin:6px 0;border-radius:6px;border:1px solid #dfe7ff"><br>
+            <label class="small">मेसेज</label><br>
+            <textarea id="msg" rows="4" required style="width:100%;padding:8px;margin:6px 0;border-radius:6px;border:1px solid #dfe7ff"></textarea><br>
+            <button class="btn" type="submit">Send</button>
+          </form>
+          <p class="small" style="margin-top:8px">(यह फॉर्म सीधे ईमेल नहीं भेजता — GitHub Pages पर simple demo है। उपयोग के लिए Netlify forms या backend जोड़ें।)</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+      <div>&copy; 2025 Dqube Pest Control</div>
+      <div class="small">Designed for local businesses • Sector 31, Noida</div>
+    </div>
+  </footer>
+
+  <script>
+    function contactNow(){
+      window.location.href = 'mailto:dqubepestcontrol1@gmail.com?subject=Service%20Inquiry%20from%20Website';
+    }
+    function sendMail(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const msg = document.getElementById('msg').value;
+      const body = encodeURIComponent('Name: '+name+'
+Phone: '+phone+'
+Message: '+msg);
+      window.location.href = 'mailto:dqubepestcontrol1@gmail.com?subject=Website%20Contact%20Form&body='+body;
+    }
+  </script>
+</body>
+</html>
